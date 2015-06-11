@@ -1,0 +1,203 @@
+#about
+  h1 
+    font 300 50px/54px "Raleway", Arial, Helvetica, sans-serif
+    margin 0 0 39px
+    color #162136
+  .slider
+    overflow hidden
+    ul
+      position relative
+      padding 0
+      margin 0
+      list-style none
+      overflow hidden
+      li
+        padding 0
+        float left
+        position relative
+        img
+          width 100%
+          height auto
+        .holder-table
+          display table
+          position absolute
+          top 0
+          left 0
+          width 100%
+          height 100%
+          .holder-cell
+            display table-cell
+            text-align center
+            vertical-align middle
+  header.slider-panel
+    padding 51px 0 0
+    margin -13px 0 80px
+    ul
+      padding 0
+      list-style none
+      display inline-block
+      li
+        position relative
+        float left
+        margin 0 20px 10px
+        &.active
+          a
+            &:before, &:after
+              position absolute
+              right 100%
+              top -51px
+              overflow hidden
+              text-indent -9999px
+              height 13px
+              background #fff
+              width 9999px
+              content ""
+            &:after
+              left 100%
+              right auto
+            span:after
+              background url('../img/bg-mask.png') no-repeat 50% 0
+              position absolute
+              left -300px
+              right -300px
+              top -51px
+              content ""
+              height 19px
+              overflow hidden
+              text-indent -9999px
+    @media screen and (max-width 767px)
+        ul
+          width 100%
+          li
+            margin 10px 0
+            width 50%
+            padding 0 5px
+            a
+              width 100%
+              &:before, &:after
+                display none
+              span:after
+                display none
+  .team
+    .text-box
+      padding 0 0 72px
+      text-align center
+      font-size 18px
+      line-height 30px
+      max-width 590px
+      margin 0 auto
+      h1
+        font 300 50px/54px "Raleway", Arial, Helvetica, sans-serif
+        margin 0 0 39px
+        color #162136
+    ul.team-list
+      list-style none
+      margin 0 -16px
+      padding 0
+      overflow hidden
+      text-align center
+      letter-spacing -4px
+      line-height 0
+      color #8a898c
+      font-size 14px
+      font-style italic
+      li
+        display inline-block
+        vertical-align top
+        letter-spacing 0
+        line-height 20px
+        margin 0 16px 50px
+        width 235px
+        a
+          text-decoration none
+          color #8a898c
+          img 
+            margin-bottom 17px
+            -webkit-filter grayscale(100%)
+            filter grayscale(100%)
+            filter gray
+            filter url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale")
+            &:hover
+              filter none
+              -webkit-filter none
+          .name
+            cursor default
+            display block
+            font-weight bold
+            color #4b82c7
+            font-size 16px
+            font-style normal
+            margin 0 0 2px
+  .company
+    max-width 600px
+    .logos
+      img
+        display inline
+        width 20%
+  .careers
+    max-width 600px
+    ul.accordion-container
+      padding 0
+      margin 0
+      > li
+        text-align left
+        border-top dashed 1px #cfd1d5
+        list-style none
+        padding 0
+        margin 0
+        overflow hidden
+        &:last-child
+          border-bottom dashed 1px #cfd1d5
+        a.title
+          display block
+          text-decoration none
+          color #4b82c7
+          font-weight normal
+          position relative
+          padding 20px 29px 15px
+          font-size 18px
+          line-height 20px
+          outline none
+          &:after
+            position absolute
+            right 36px
+            top 17px
+            width 23px
+            height 23px
+            content "+"
+            border-radius 50%
+            background #4b82c7
+            color #fff
+            font-weight 900
+            text-align center
+            font-size 18px
+            line-height 20px
+          &:hover
+            background-color #4b82c7 
+            color #fff
+            &:after
+              background #000 
+        .details
+          max-height 0
+          transition all .2s ease
+          h2
+            margin 0 0 17px -30px
+            font-size 14px
+            line-height 16px
+            font-weight bold
+          ul
+            padding-bottom 10px
+        &.opened
+          a.title
+            border-bottom dashed 1px #cfd1d5
+            color #000
+            &:hover
+              color #fff
+            &:after 
+              content '-'
+          .details
+            max-height 1000px
+            padding 19px 30px
+            
+            
+            

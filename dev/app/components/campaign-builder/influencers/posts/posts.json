@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "postId": 1,
+      "platformType": "twitter",
+      "image": "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/11190991_399060033552103_1241230462_n.jpg",
+      "commentCount": "55",
+      "shareCount": "0",
+      "likeCount": "10003"
+    },
+    {
+      "postId": "2",
+      "platformType": "instagram",
+      "image": "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/11190991_399060033552103_1241230462_n.jpg",
+      "commentCount": "55",
+      "shareCount": "0",
+      "likeCount": "10003"
+    },
+    {
+      "postId": "3",
+      "platformType": "instagram",
+      "image": "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/11190991_399060033552103_1241230462_n.jpg",
+      "commentCount": "55",
+      "shareCount": "0",
+      "likeCount": "10003"
+    },
+    {
+      "postId": "4",
+      "platformType": "instagram",
+      "image": "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/11190991_399060033552103_1241230462_n.jpg",
+      "commentCount": "55",
+      "shareCount": "0",
+      "likeCount": "10003"
+    },
+    {
+      "postId": "5",
+      "platformType": "instagram",
+      "image": "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/11190991_399060033552103_1241230462_n.jpg",
+      "commentCount": "55",
+      "shareCount": "0",
+      "likeCount": "10003"
+    }
+  ]
+}

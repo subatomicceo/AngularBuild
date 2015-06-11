@@ -1,0 +1,44 @@
+<nav class="main-menu navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="app.home"><img src="assets/img/logo.png" alt="Insta brand" width="156" height="47"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-if="!user">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ui-sref="app.about">About</a></li>
+        <li><a href="http://blog.instabrand.com/">Blog</a></li>
+        <li><a ui-sref="app.about">Contacts</a></li>
+        <li><a ui-sref="app.login">Login</a></li>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-if="user">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ui-sref="app.about({tab: 'team'})">About</a></li>
+        <li><a href="http://blog.instabrand.com/">Blog</a></li>
+        <li><a ui-sref="app.about({tab: 'contacts'})">Contacts</a></li>
+        <li class="login"><a ui-sref="app.login">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="ui-view main-container"></div>
+<footer id="footer">
+  <div class="container">
+    <ul class="social">
+      <li>
+        <a href="http://instagram.com/instabrand.co" target="_blank"><i class="icon icon-insta"></i></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/teaminstabrand" target="_blank"><i class="icon icon-twitter"></i></a>
+      </li>
+    </ul>
+    <p>6338 Wilshire Blvd, Los Angeles, CA 90048 · <a href="mailto:support@instabrand.com">Online contact</a> · 323.424.4001</p>
+    <p>© 2014 Instabrand</p>
+  </div>
+</footer>

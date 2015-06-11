@@ -1,0 +1,13 @@
+<li class="active" ng-repeat="slide in slides" bg-image="{{slide.bg}}" ng-style="{'height': elementSize.height + 'px', 'width': elementSize.width + 'px'}">
+  <img alt="" ng-src="{{slide.image}}">
+  <div class="holder-table">
+    <div class="holder-cell">
+      <div class="content">
+        <strong class="title" ng-show="slide.text">
+          {{slide.text}}
+        </strong>
+        <div class="note white">{{slide.note}}</div>
+      </div>
+    </div>
+  </div>
+</li>

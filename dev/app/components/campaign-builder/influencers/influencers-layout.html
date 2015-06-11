@@ -1,0 +1,48 @@
+<header class="info-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <img src="{{campaignBuilderInfluencer.influencer.image}}" alt="">
+      </div>
+      <div class="col-md-10 info">
+        <h2>{{campaignBuilderInfluencer.influencer.fullName}}</h2>
+        <div class="col-md-8 description">
+          <ul>
+            <li><i class="insta-ico icon-map-pin"></i> {{campaignBuilderInfluencer.influencer.location}}</li>
+            <li><i class="insta-ico icon-tag"></i> {{campaignBuilderInfluencer.influencer.tags.join(', ')}}</li>
+          </ul>
+        </div>
+        <div class="col-md-4 socials"></div>
+      </div>
+    </div>
+  </div>
+</header>
+<nav class="soc-menu">
+  <ul class="nav nav-pills container">
+    <li ng-class="{'active': campaignBuilderInfluencer.activePlatformId === campaignBuilderInfluencer.allPlatforms}"><a ng-click="campaignBuilderInfluencer.switchPlatform(campaignBuilderInfluencer.allPlatforms)">Total followers<br> <span class="followers">{{campaignBuilderInfluencer.influencer.totalCount}}</span></a></li>
+    <li ng-class="{'active': campaignBuilderInfluencer.activePlatformId === platform.platformTypeId}" ng-repeat="platform in campaignBuilderInfluencer.influencer.platforms">
+      <a ng-click="campaignBuilderInfluencer.switchPlatform(platform.platformTypeId)">{{platform.name}} <br><span class="followers">{{platform.count}}</span></a>
+    </li>
+  </ul>
+</nav>
+<!-- parent must have unique id! -->
+<div class="container">
+  <!-- left navbar START -->
+  <div class="row">
+    <div class="col-sm-3 col-md-2 left-menu">
+      <div class="panel panel-default" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel-header text-center">
+          <h3>Show</h3>
+        </div>
+        <div class="panel-body">
+          <ul class="nav nav-tabs" role="tablist">
+            <li ng-class="{'active': campaignBuilderInfluencer.activeTab === tab}"ng-repeat="tab in campaignBuilderInfluencer.tabs">
+              <a href="" ng-click="campaignBuilderInfluencer.switchTab(tab)">{{tab}}</a>
+            </li>
+        </div>
+      </div>
+    </div>
+    <!-- left navbar END -->
+    <ui-view></ui-view>
+  </div>
+</div>

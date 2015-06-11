@@ -1,0 +1,114 @@
+#cmp-inf-posts
+  .post
+    &.last-row-el
+      padding-bottom 600px
+    @media screen and (max-width 1199px)
+      &.last-row-el
+        padding-bottom 520px
+    @media screen and (max-width 991px)
+      &.last-row-el
+        padding-bottom 920px
+    .thumbnail
+      position relative
+      border-radius 0
+      margin-bottom 0
+      i
+        position absolute
+        bottom 4px
+        left 4px
+        display block
+        width 33px
+        height 33px
+        line-height 33px
+        text-align center
+        color #fff
+        font-size 22px
+        background-color rgba(0,0,0,0.3)
+    .soc-icons
+      span
+        display inline-block
+        float left
+        width 50%
+        padding-left 22px
+        cursor default
+        font-size 15px
+        color #464d5c
+        line-height 30px
+      margin-bottom 15px  
+      margin-top 5px
+      float left
+      width 100%
+    &.active
+      .soc-icons
+        visibility hidden;
+      
+  #social-post-opened
+    position absolute
+    display none
+    left 0
+    padding 40px
+    padding-bottom 0
+    min-height 400px
+    background-color #f5f6f7
+    border solid 1px #e8e9eb
+    margin 0 15px
+    clear both
+    &.opened
+      display block
+    .close-post
+      cursor pointer
+      position absolute
+      right 30px
+      top 15px
+    h2, h5
+      margin-top 0
+      margin-bottom 10px
+      text-align left
+      font-family "Lato",Arial,Helvetica,sans-serif
+    ul
+      max-height 500px
+      list-style none
+      overflow-y scroll
+      padding 0
+      margin 0
+      li
+        float left
+        width 100%
+        margin-bottom 10px
+        div
+          line-height 20px
+          font-size 14px
+          a.name
+            color #4b82c7
+          p
+            margin-bottom 0
+        img
+          float left
+          width 40px
+          height 40px
+          border-radius 50%
+          margin-right 15px
+    .post-container
+      h5.social-title
+        color #a3a6ae
+        line-height 20px
+      p
+        text-align left
+        font-weight 400
+        line-height 23px
+        margin-bottom 30px
+      img
+        vertical-align middle
+        max-width 100%
+      .image-footer
+        width 100%
+        line-height 35px
+        background-color rgba(178, 182, 189, 0.8)
+        position relative
+        top -35px
+        height 35px
+        color #fff
+        display table
+        span
+          display table-cell
+          width 33%

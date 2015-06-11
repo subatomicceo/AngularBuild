@@ -1,0 +1,225 @@
+.note
+  font-weight bold
+  font-style italic
+  font-size 16px
+  line-height 18px
+  color #a3a6ae
+  position relative
+  text-transform uppercase
+  text-align center
+  padding 17px 0 16px
+  letter-spacing 1px
+  &:before, &:after
+    position absolute
+    left 50%
+    top 0
+    width 147px
+    height 1px
+    background #cfd1d5
+    content ""
+    margin 0 0 0 -75px
+  &:after
+    top 100%
+    margin-top -1px
+  &.black
+    color #000
+    &:before, &:after
+      background-color #000
+  &.white
+    color #fff
+    &:before, &:after
+      background-color #fff
+      
+//Controls dots
+ul.controls
+  padding 0
+  list-style none
+  > li
+    float left
+    display inline-block
+    margin-right 20px;
+    &:last-child
+      margin-right 0
+    a
+      width 5px
+      height 5px
+      border-radius 8px
+      background #000
+      text-indent -9999px
+      display block
+      outline none
+      position relative
+      cursor pointer
+      &:after
+        border-radius 8px
+        width 13px
+        height 13px
+        border 1px solid #777d87
+        position absolute
+        left -4px
+        top -4px
+        content ""
+        display none
+      &:hover
+        background-color #747a85
+        &:after
+          display inline-block
+    &.active
+      a
+        background-color #747a85
+        &:after
+          display inline-block
+  &.dark
+    > li
+      a
+        background-color #777d87
+        &:after
+          border-color #fff    
+        &:hover
+          background-color #fff
+      &.active
+        a
+          background-color #fff
+.m
+  margin 15px !important
+.m-xs
+  margin 5px !important
+.m-sm
+  margin 10px !important
+.m-md
+  margin 20px !important
+.m-lg
+  margin 30px !important
+.m-n
+  margin 0px !important
+.m-l
+  margin-left 15px !important
+.m-l-xs
+  margin-left 5px !important
+.m-l-sm
+  margin-left 10px !important
+.m-l-md
+  margin-left 20px !important
+.m-l-lg
+  margin-left 30px !important
+.m-l-xl
+  margin-left 40px !important
+.m-l-xxl
+  margin-left 50px !important
+.m-l-none
+  margin-left 0px !important
+.m-l-n
+  margin-left -15px !important
+.m-l-n-xxs
+  margin-left -1px !important
+.m-l-n-xs
+  margin-left -5px !important
+.m-l-n-sm
+  margin-left -10px !important
+.m-l-n-md
+  margin-left -20px !important
+.m-l-n-lg
+  margin-left -30px !important
+.m-l-n-xl
+  margin-left -40px !important
+.m-l-n-xxl
+  margin-left -50px !important
+  
+.m-r
+  margin-right 15px !important
+.m-r-xs
+  margin-right 5px !important
+.m-r-sm
+  margin-right 10px !important
+.m-r-md
+  margin-right 20px !important
+.m-r-lg
+  margin-right 30px !important
+.m-r-xl
+  margin-right 40px !important
+.m-r-xxl
+  margin-right 50px !important
+.m-r-none
+  margin-right 0px !important
+.m-r-n
+  margin-right -15px !important
+.m-r-n-xxs
+  margin-right -1px !important
+.m-r-n-xs
+  margin-right -5px !important
+.m-r-n-sm
+  margin-right -10px !important
+.m-r-n-md
+  margin-right -20px !important
+.m-r-n-lg
+  margin-right -30px !important
+.m-r-n-xl
+  margin-right -40px !important
+.m-r-n-xxl
+  margin-right -50px !important
+
+.m-b
+  margin-bottom 15px !important
+.m-b-xs
+  margin-bottom 5px !important
+.m-b-sm
+  margin-bottom 10px !important
+.m-b-md
+  margin-bottom 20px !important
+.m-b-lg
+  margin-bottom 30px !important
+.m-b-xl
+  margin-bottom 40px !important
+.m-b-xxl
+  margin-bottom 50px !important
+.m-b-none
+  margin-bottom 0px !important
+.m-b-n
+  margin-bottom -15px !important
+.m-b-n-xxs
+  margin-bottom -1px !important
+.m-b-n-xs
+  margin-bottom -5px !important
+.m-b-n-sm
+  margin-bottom -10px !important
+.m-b-n-md
+  margin-bottom -20px !important
+.m-b-n-lg
+  margin-bottom -30px !important
+.m-b-n-xl
+  margin-bottom -40px !important
+.m-b-n-xxl
+  margin-bottom -50px !important
+  
+.m-t
+  margin-top 15px !important
+.m-t-xs
+  margin-top 5px !important
+.m-t-sm
+  margin-top 10px !important
+.m-t-md
+  margin-top 20px !important
+.m-t-lg
+  margin-top 30px !important
+.m-t-xl
+  margin-top 40px !important
+.m-t-xxl
+  margin-top 50px !important
+.m-t-none
+  margin-top 0px !important
+.m-t-n
+  margin-top -15px !important
+.m-t-n-xxs
+  margin-top -1px !important
+.m-t-n-xs
+  margin-top -5px !important
+.m-t-n-sm
+  margin-top -10px !important
+.m-t-n-md
+  margin-top -20px !important
+.m-t-n-lg
+  margin-top -30px !important
+.m-t-n-xl
+  margin-top -40px !important
+.m-t-n-xxl
+  margin-top -50px !important

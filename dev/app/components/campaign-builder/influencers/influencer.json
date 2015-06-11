@@ -1,0 +1,23 @@
+{
+  "fullName": "Rachel Apollonio",
+  "id": "12",
+  "location": "Santa Cecília, São Paulo",
+  "image": "https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11138058_462916850539861_751744322_a.jpg",
+  "tags": [
+    "Fashion",
+    "Fitness",
+    "Swimwear"
+  ],
+  "platforms": [{
+    "name": "Facebook",
+    "platformType": "twitter",
+    "platformTypeId": "2",
+    "count": "326.3K"
+  }, {
+    "name": "Twitter",
+    "platformType": "twitter",
+    "platformTypeId": "3",
+    "count": "123K"
+  }],
+  "totalCount": "449.3K"
+}

@@ -1,0 +1,54 @@
+<header class="info-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <img src="https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11138058_462916850539861_751744322_a.jpg" alt="">
+      </div>
+      <div class="col-md-10 info">
+        <h2>Brand Name</h2>
+        <div class="col-md-8 description">
+          <ul>
+            <li><i class="insta-ico icon-map-pin"></i> Santa Cecília, São Paulo </li>
+            <li><i class="insta-ico icon-tag"></i> Fashion, Fitness, Swimwear </li>
+          </ul>
+        </div>
+        <div class="col-md-4 socials"></div>
+      </div>
+    </div>
+  </div>
+</header>
+<nav class="soc-menu">
+  <ul class="nav nav-pills container">
+    <li class="active"><a href="#total-followers" class="tab-link" data-toggle="tab" data-platform="all">Total followers<br> <span class="followers">316.7K</span></a></li>
+    <li><a href="#instagram" class="tab-link" data-toggle="tab" data-platform="instagram">instagram <br><span class="followers">316.7K</span></a></li>
+  </ul>
+</nav>
+<div class="container">
+  <!-- left navbar START -->
+  <div class="row">
+    <div class="col-md-2 left-menu">
+      <div class="panel panel-default" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel-header text-center">
+          <h3>Show</h3>
+        </div>
+        <div class="panel-body">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="">Profile</a></li>
+            <li><a href="">Posts</a></li>
+            <li><a data-toggle="collapse" data-parent="#accordion" href="#campaignsDrop" aria-expanded="true" aria-controls="campaignsDrop">Campaigns</a>
+              <ul id="campaignsDrop" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <li><a ui-sref="app.dashboard.brand.general.requests">Requests</a></li>
+                <li><a ui-sref="app.dashboard.brand.general.overview">Overview</a></li>
+                <li><a ui-sref="app.dashboard.brand.general.analytics">Analytics</a></li>
+                <li><a ui-sref="app.dashboard.brand.general.hashtags">Hashtags</a></li>
+                <li><a ui-sref="app.dashboard.brand.general.posts">Posts</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- left navbar END -->
+    <ui-view></ui-view>
+  </div>
+</div>

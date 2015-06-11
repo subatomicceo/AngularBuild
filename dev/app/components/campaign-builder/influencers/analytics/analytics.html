@@ -1,0 +1,111 @@
+<div class="col-md-10 col-sm-9" id="cmp-inf-analytics">
+  <div class="clearfix top-buffer">
+    <div class="panel panel-default separated">
+      <div class="panel-heading text-center clearfix">
+        <div class="col-md-10">
+          <b>Followers By Platform:</b>
+        </div>
+        <div class="col-md-2 total">
+          Total reach
+          <br/>
+          <span>312123</span>
+        </div>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+  <!-- audience gender START -->
+  <h4 class="text-center">Audience Gender</h4>
+  <div class="progress gender clearfix">
+    <div class="progress-bar male" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:{{influencersAnalitycs.analytics.gender.male}}%;">
+      <span class="percent">{{influencersAnalitycs.analytics.gender.male}}%</span>
+      <p class="title">Male</p>
+    </div>
+    <div class="progress-bar female" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:{{influencersAnalitycs.analytics.gender.female}}%;">
+      <span class="percent">{{influencersAnalitycs.analytics.gender.female}}%</span>
+      <p class="title">Female</p>
+    </div>
+  </div>
+  <!-- location chart START -->
+  <div class="clearfix top-buffer">
+    <div class="panel panel-default">
+      <div class="panel-heading text-center"><b>Location</b></div>
+      <div class="panel-body">
+        <div class="col-md-8">
+          <div google-chart chart="chart" style="{{cssStyle}}" on-ready="chartReady()"></div>
+        </div>
+        <div class="col-md-4">
+          <div class="row" ng-repeat="location in influencersAnalitycs.analytics.locations">
+            <div class="col-md-6">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:{{location.percent}}%;"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <span class="flag-icon flag-icon-{{location.name}}"></span>{{location.value}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- location gain chart END -->
+  <div class="clearfix top-buffer">
+    <div class="panel panel-default separated">
+      <div class="panel-heading text-center clearfix">
+        <div class="col-md-10">
+          <b>Followers Growth:</b>
+        </div>
+        <div class="col-md-2 total">
+          Total followers
+          <br/>
+          <span>312123</span>
+        </div>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+  <div class="clearfix top-buffer engagement">
+    <div class="panel panel-default">
+      <div class="panel-heading text-center">
+        <b>Engagements</b>
+      </div>
+      <div class="panel-body">
+        <div class="col-md-6 text-center">
+          <header>
+            <h2>{{influencersAnalitycs.analytics.engagements.averageEngRate}}%</h2>
+            <p>AVERAGE ENGAGEMENT RATE</p>
+          </header>
+          <div class="engagement-info">
+            <div class="engagement-block">
+              <i class="icon icon-heart"></i> Average Likes Per Post
+              <span>{{influencersAnalitycs.analytics.engagements.averageLikesPerPost}}</span>
+            </div>
+            <div class="engagement-block">
+              <i class="icon icon-comment"></i> Average Comments Per Post
+              <span>{{influencersAnalitycs.analytics.engagements.averageCommentsPerPost}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <header>
+            <h2>{{influencersAnalitycs.analytics.engagements.totalEngLastWeek}}</h2>
+            <p>TOTAL ENGAGEMENTS LAST WEEK</p>
+          </header>
+          <div class="engagement-info">
+            <div class="engagement-block">
+              <i class="icon icon-heart"></i> Total Likes
+              <span>{{influencersAnalitycs.analytics.engagements.totalLikes}}</span>
+            </div>
+            <div class="engagement-block">
+              <i class="icon icon-comment"></i> Total Comments
+              <span>{{influencersAnalitycs.analytics.engagements.totalComments}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

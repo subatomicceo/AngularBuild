@@ -1,0 +1,23 @@
+{
+  "posts": [{
+    "timestamp": "1429107613175",
+    "platform": "twitter",
+    "image": "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/11005102_366326520238028_884326072_n.jpg",
+    "totalReach": "18,453",
+    "engagement": "18,453",
+    "shares": "25,4K",
+    "followers": "25,4K",
+    "sharesReach": "18,453",
+    "text": "some simple text"
+  }, {
+    "timestamp": "1429107613175",
+    "platform": "twitter",
+    "image": "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/11005102_366326520238028_884326072_n.jpg",
+    "totalReach": "18,453",
+    "engagement": "18,453",
+    "shares": "25,4K",
+    "followers": "25,4K",
+    "sharesReach": "18,453",
+    "text": "some simple text"
+  }]
+}

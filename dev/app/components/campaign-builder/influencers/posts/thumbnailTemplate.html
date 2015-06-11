@@ -1,0 +1,11 @@
+<div class="col-md-3 col-xs-6 col-sm-4 post {{item.platformType}}" ng-click="influencersPosts.getPostDetails($index, item.postId, $event)">
+  <div class="thumbnail">
+    <img src="{{item.image}}">
+    <i class="icon icon-{{item.platformType}}"></i>
+  </div>
+  <footer class="soc-icons">
+    <span><i class="icon icon-heart"></i> {{item.likeCount}}</span>
+    <span><i class="icon icon-comment"></i> {{item.commentCount}}</span>
+    <span><i class="icon icon-share"></i> {{item.shareCount}}</span>
+  </footer>
+</div>

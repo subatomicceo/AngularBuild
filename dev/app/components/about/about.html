@@ -1,0 +1,28 @@
+<div id="about">
+  <header class="slider">
+    <ul main-carousel="about.tab" slides="about.slides">
+    </ul>
+  </header>
+  <section>
+    <header class="slider-panel text-center">
+      <ul class="multiple">
+        <li ng-class="{'active': about.tab===1}">
+          <a class="btn btn-default btn-lg btn-fixed" ng-click="about.tab=1"><span>Team</span></a>
+        </li>
+        <li ng-class="{'active': about.tab===2}">
+          <a class="btn btn-default btn-lg btn-fixed" ng-click="about.tab=2"><span>Company</span></a>
+        </li>
+        <li ng-class="{'active': about.tab===3}">
+          <a class="btn btn-default btn-lg btn-fixed" ng-click="about.tab=3"><span>Carrers</span></a>
+        </li>
+        <li ng-class="{'active': about.tab===4}">
+          <a class="btn btn-default btn-lg btn-fixed" ng-click="about.tab=4"><span>Contact</span></a>
+        </li>
+      </ul>
+    </header>
+    <div ng-include="about.templates.team" ng-show="about.tab === 1"></div>
+    <div ng-include="about.templates.company" ng-show="about.tab === 2"></div>
+    <div ng-include="about.templates.careers" ng-show="about.tab === 3"></div>
+    <div ng-include="about.templates.contact" ng-show="about.tab === 4"></div>
+  </section>
+</div>

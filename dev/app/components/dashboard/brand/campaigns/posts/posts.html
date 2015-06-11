@@ -1,0 +1,36 @@
+<div class="col-md-10" id="campaigns-posts">
+  <div class="row">
+    <!-- campaigns dropdown START -->
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="campaignsDropdown" data-toggle="dropdown" aria-expanded="true">
+        Select Campaign
+        <span class="fa fa-chevron-down"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="campaignsDropdown">
+        <li role="presentation" ng-repeat="campaign in campaigns">
+          <a role="menuitem" tabindex="-1" href="#" id="{{campaign.id}}">{{campaign.name}}</a>
+        </li>
+      </ul>
+    </div>
+    <!-- campaigns dropdown END -->
+    <!-- download as pdf btn  START -->
+    <div class="pdf-btn">
+      <button type="button" class="btn btn-default" aria-label="Left Align">
+        Download PDF <span class="fa fa-file-pdf-o" aria-hidden="true"></span>
+      </button>
+    </div>
+    <!-- download as pdf btn END -->
+  </div>
+  <div class="row">
+    <h4 class="text-left pull-left title">Published posts</h4>
+    <select class="pull-right">
+      <option value="">Recent</option>
+    </select>
+  </div>
+  <div class="row clearfix">
+    <hr>
+    <div class="row">
+      <breakdown-post ng-repeat="post in campaignsPosts.posts"></breakdown-post>
+    </div>
+  </div>
+</div>

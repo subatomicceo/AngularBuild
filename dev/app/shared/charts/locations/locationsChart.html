@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+  <div class="panel-heading text-center"><b>Audience Locations</b></div>
+  <div class="panel-body">
+    <div class="col-md-8">
+      <div google-chart chart="chart" style="{{cssStyle}}" on-ready="chartReady()"></div>
+    </div>
+    <div class="col-md-4">
+      <div class="row" ng-repeat="location in dashboard.analytics.locations">
+        <div class="col-md-6">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:{{location.percent}}%;"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <span class="flag-icon flag-icon-{{location.name}}"></span>{{location.value}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

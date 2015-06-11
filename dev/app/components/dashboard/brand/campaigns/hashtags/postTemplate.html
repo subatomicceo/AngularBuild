@@ -1,0 +1,17 @@
+<div class="row {{post.platform}}">
+  <div class="col-md-6">
+    <span class="index">{{$index + 1}}</span>
+    <a ng-href="{{post.link}}" target="_blank">
+      <div class="thumbnail pull-left">
+        <img ng-src="{{post.image}}" alt="">
+      </div>
+    </a>
+  </div>
+  <div class="col-md-6">
+    <a class="link" ng-href="{{post.link}}" target="_blank">{{post.author}}</a>
+    <p><i class="fa fa-globe"></i> {{post.reach}}</p>
+    <p><i class="fa fa-globe"></i> {{post.likes}}</p>
+    <p><i class="fa fa-globe"></i> {{post.shares}}</p>
+    <p>{{post.text}}</p>
+  </div>
+</div>

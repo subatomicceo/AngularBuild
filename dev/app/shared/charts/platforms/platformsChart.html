@@ -1,0 +1,29 @@
+<div class="panel panel-default">
+  <div class="panel-heading text-center"><b>Audience by Platform</b></div>
+  <div class="panel-body followers-platform text-center">
+    <div id="followers-platform" class="col-md-12 nopadding" style="margin: 0 auto">
+      <div id="chart-container">
+        <div class="donut-container">
+          <div id="donutchart" google-chart chart="chart" style="{{platformsChartStyle}}" on-ready="chartReady()"></div>
+          <div class="icons-container">
+            <div class="total-reach-platforms">
+              <span>TOTAL REACH</span>
+              <h1>{{reach}}</h1>
+            </div>
+            
+          </div>
+        </div>
+        <div id="donut-legend">
+          <div class="platform-legend" ng-repeat="platform in platforms">
+            <div class="legend-block legend-percent {{platform.name}}">{{platform.analytics.percent}}%</div>
+            <div class="legend-block legend-label">
+              <p><b>{{platform.followers_gained}}</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

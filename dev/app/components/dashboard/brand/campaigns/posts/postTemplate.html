@@ -1,0 +1,41 @@
+<div class="col-md-12">
+  <h5><i class="fa fa-twitter"></i> Published {{post.timestamp | date:'dd.MM.yyyy | HH:mma'}}</h5>
+</div>
+<div class="col-md-6 clearfix {{post.platform}} post">
+  <img ng-src="{{post.image}}" alt="">
+</div>
+<div class="col-md-6 clearfix statistics">
+  <div class="row text-center">
+    <div class="col-md-4 stat-block">
+      <i class="icon-globe"></i>
+      <h3>{{post.totalReach}}</h3>
+      <h5>Total Reach</h5>
+    </div>
+    <div class="col-md-4 stat-block">
+      <i class="icon-comment"></i>
+      <h3>{{post.engagement}}</h3>
+      <h5>Total Engagenemt</h5>
+    </div>
+    <div class="col-md-4 stat-block">
+      <i class="icon-share"></i>
+      <h3>{{post.shares}}</h3>
+      <h5>Total Shares</h5>
+    </div>
+    <div class="col-md-4 stat-block">
+      <i class="icon-comment"></i>
+      <h3>{{post.sharesReach}}</h3>
+      <h5>Shares Reach</h5>
+    </div>
+    <div class="col-md-4 stat-block">
+      <i class="icon-user"></i>
+      <h3>{{post.followers}}</h3>
+      <h5>Followers Gained</h5>
+    </div>
+    <div class="col-md-12 text-left">
+      <p>{{post.text}}</p>
+    </div>
+  </div>
+</div>
+<div class="col-md-12">
+  <hr class="clearfix" />
+</div>

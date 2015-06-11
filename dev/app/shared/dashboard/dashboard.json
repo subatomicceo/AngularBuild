@@ -1,0 +1,219 @@
+{
+    "dashboard": {
+        "user": {
+            "id": 1234,
+            "name": "Nike",
+            "image": "/images/usr/nike.jpg"
+        },
+        "analytics":{
+            "overview": {
+                "posts": {
+                    "published": "1M",
+                    "total": "1.4M"
+                },
+                "likes": "600",
+                "reach": "60k",
+                "percent": "16.6",
+                "comments": "1.2k",
+                "shares": "21.65k",
+                "followers_gained": "21.65k"
+            },
+            "locations": [
+                {
+                    "name": "us",
+                    "value": 200,
+                    "percent": 65
+                },
+                {
+                    "name": "ca",
+                    "value": 300,
+                    "percent": 15
+                },
+                {
+                    "name": "it",
+                    "value": 400,
+                    "percent": 10
+                },
+                {
+                    "name": "fr",
+                    "value": 500,
+                    "percent": 5
+                },
+                {
+                    "name": "de",
+                    "value": 600,
+                    "percent": 3
+                },
+                {
+                    "name": "ru",
+                    "value": 70,
+                    "percent": 2
+                }
+            ],
+            "gender": {
+            "male": 70,
+            "female": 30
+            },
+            "platforms": [
+                {
+                    "id": 1,
+                    "name": "instagram",
+                    "color": "#3e729a",
+                    "analytics": {
+                        "followers_gained": "150.3k",
+                        "posts": "1.4M",
+                        "reach": "60k",
+                        "percent": "16.6",
+                        "engagement": ".6",
+                        "locations": {
+                            "Germany ": 200,
+                            "United States ": 300,
+                            "Brazil ": 400,
+                            "Canada ": 500,
+                            "France ": 600,
+                            "RU ": 70
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "facebook",
+                    "color": "#3b5999",
+                    "analytics": {
+                        "followers_gained": "150.3k",
+                        "posts": "1.4M",
+                        "reach": "60k",
+                        "percent": "16.6",
+                        "engagement": ".6",
+                        "locations": {
+                            "Germany ": 200,
+                            "United States ": 300,
+                            "Brazil ": 400,
+                            "Canada ": 500,
+                            "France ": 600,
+                            "RU ": 70
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "name": "youtube",
+                    "color": "#cf3427",
+                    "analytics": {
+                        "followers_gained": "150.3k",
+                        "posts": "1.4M",
+                        "reach": "60k",
+                        "percent": "16.6",
+                        "engagement": ".6",
+                        "locations": {
+                            "Germany ": 200,
+                            "United States ": 300,
+                            "Brazil ": 400,
+                            "Canada ": 500,
+                            "France ": 600,
+                            "RU ": 70
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "name": "twitter",
+                    "color": "#55acef",
+                    "analytics": {
+                        "followers_gained": "150.3k",
+                        "posts": "1.4M",
+                        "reach": "60k",
+                        "percent": "16.6",
+                        "engagement": ".6",
+                        "locations": {
+                            "Germany ": 200,
+                            "United States ": 300,
+                            "Brazil ": 400,
+                            "Canada ": 500,
+                            "France ": 600,
+                            "RU ": 70
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "name": "vine",
+                    "color": "#00b487",
+                    "analytics": {
+                        "followers_gained": "150.3k",
+                        "posts": "1.4M",
+                        "reach": "60k",
+                        "percent": "16.6",
+                        "engagement": ".6",
+                        "locations": {
+                            "Germany ": 200,
+                            "United States ": 300,
+                            "Brazil ": 400,
+                            "Canada ": 500,
+                            "France ": 600,
+                            "RU ": 70
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "name": "snapchat",
+                    "color": "#fffc00",
+                    "analytics": {
+                        "followers_gained": "150.3k",
+                        "posts": "1.4M",
+                        "reach": "60k",
+                        "percent": "16.6",
+                        "engagement": ".6",
+                        "locations": {
+                            "Germany ": 200,
+                            "United States ": 300,
+                            "Brazil ": 400,
+                            "Canada ": 500,
+                            "France ": 600,
+                            "RU ": 70
+                        }
+                    }
+                }
+            ],
+            "audience" : {
+                "totals": {
+                    "gained" : "10k",
+                    "lost" : "10",
+                    "average_gained" : "1k",
+                    "average_lost" : "1.3"
+                },
+                "stats" : [
+                    ["03/11/2015", 280, 19],
+                    ["03/12/2015", 218, 41],
+                    ["03/13/2015", 128, 191],
+                    ["03/14/2015", 2128, 129],
+                    ["03/15/2015", 381, 219],
+                    ["03/16/2015", 528, 319],
+                    ["03/17/2015", 728, 119],
+                    ["03/18/2015", 828, 193],
+                    ["03/19/2015", 928, 119],
+                    ["03/20/2015", 1028, 319],
+                    ["03/21/2015", 2800, 419],
+                    ["03/22/2015", 2821, 519],
+                    ["03/23/2015", 2852, 119],
+                    ["03/24/2015", 2891, 219]
+                ]
+            }
+        },
+        "campaigns": [
+            {
+                "id": 123,
+                "name": "Just Do It"
+            },
+            {
+                "id": 456,
+                "name": "Kobe Did"
+            },
+            {
+                "id": 789,
+                "name": "Get It?"
+            }
+        ]
+    }
+}

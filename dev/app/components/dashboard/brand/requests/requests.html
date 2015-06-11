@@ -1,0 +1,28 @@
+<!-- parent must have unique id! -->
+<div class="col-md-10" id="requests">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="campaignsDropdown" data-toggle="dropdown" aria-expanded="true">
+				Select Campaign<i class="icon-expand-more"></i>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="campaignsDropdown">
+					<li role="presentation" ng-repeat="campaign in dashboard.campaigns">
+						<a role="menuitem" tabindex="-1" href="#" id="{{campaign.id}}">{{campaign.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-1 col-md-offset-8">
+			<i class="icon-bars"></i>
+			<i class="icon-th-large" ng-click="doClick()"></i>
+		</div>
+	</div>
+	<div class="row top-buffer">
+		<list-view dashboard="dashboard"></list-view>
+	</div>
+
+	<div class="row top-buffer">
+		<div ui-calendar="uiConfig.calendar" class="span8 calendar" ng-model="eventSources"></div> 
+	</div>
+</div>

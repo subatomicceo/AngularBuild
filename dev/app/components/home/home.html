@@ -1,0 +1,137 @@
+<div id="home">
+  <section class="promo-box">
+    <div class="video-container">
+      <video autoplay="" loop="" width="1280" height="72
+0" class="fill home-vid" poster="assets/img/home/vid-fallback.jpg">
+        <source src="assets/img/home/home.ogv" type="video/ogg">
+          Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay">
+        <div class="container text-container text-center">
+          <div class="text-box">
+            <h1>It's your story, <br>have the right people share it.</h1>
+            <a href="#sec-contact" class="btn btn-primary" scroll-page>Sign Up</a>
+          </div>
+        </div>
+        <div class="icon-container">
+          <div class="container">
+            <i class="icon icon-InstagramFinal"></i>
+            <i class="icon icon-VineFinal"></i>
+            <i class="icon icon-SnapChatFinal"></i>
+            <i class="icon icon-YoutubeFinal"></i>
+            <i class="icon icon-FacebookFinal"></i>
+            <i class="icon icon-TwitterFinal"></i>
+            <i class="icon icon-PinterestFinal"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="brand-carousel text-center">
+    <div class="note">Join the world's biggest brands</div>
+    <div class="carousel">
+      <div class="carousel-wrapper">
+        <ul home-carousel>
+          <li ng-repeat="img in [1,2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19]">
+            <img ng-src="assets/img/home/sponsors/sponsor-logo{{img}}.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <simple-slider></simple-slider>
+  <section class="slider no-images">
+    <ul main-carousel="home.tab" slides="home.mainCarouselSlides">
+    </ul>
+  </section>
+  <section class="how-it-works">
+    <header class="row text-center tab-set slider-panel">
+      <ul>
+        <li ng-class="{'active': home.tab === 1}">
+          <a class="btn btn-info btn-fixed" ng-click="home.tab=1"><span>I'm a brand</span></a>
+        </li>
+        <li ng-class="{'active': home.tab === 2}">
+          <a class="btn btn-success btn-fixed" ng-click="home.tab=2"><span>I'm an influencer</span></a>
+        </li>
+      </ul>
+    </header>
+    <div ng-show="home.tab === 1" bg-image="assets/img/home/slide-1.png" class="tab">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-6 col-sm-7 col-sm-offset-5">
+            <div class="text-box">
+              <h1>How It Works</h1>
+              <ul>
+                <li class="ico4">
+                  <p><strong>Set a goal</strong></p>
+                  <p>Help us understand your brand and we will help you build a successful campaign.</p>
+                </li>
+                <li class="ico5">
+                  <p><strong>Select who will share your story</strong></p>
+                  <p>Tap into our influencer network. We will help you select relevant influencers who can integrate your brand's message through organic content.</p>
+                </li>
+                <li class="ico6">
+                  <p><strong>See the results</strong></p>
+                  <p>Watch the power of your campaign with real-time analytics.</p>
+                </li>
+              </ul>
+              <div class="text-center button-bar">
+                <a href="#sec-contact" class="btn btn-primary btn-lg" scroll-page>Get Started now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div ng-show="home.tab === 2" bg-image="assets/img/home/slide-2.png" class="tab">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-6 col-sm-7 col-sm-offset-5">
+            <div class="text-box">
+              <h1>How It Works</h1>
+              <ul>
+                <li class="ico1">
+                  <p><strong>You're a social-media celebrity</strong></p>
+                  <p>Join instaBRAND's network and we will partner you with brands that need the power of your social following.</p>
+                </li>
+                <li class="ico2">
+                  <p><strong>Do what you do best</strong></p>
+                  <p>Create organic content for our brand partners and spread their message to your followers.</p>
+                </li>
+                <li class="ico3">
+                  <p><strong>Get paid for your influence</strong></p>
+                  <p>Your influence is an asset, and we will make sure you get what you deserve, again and again.</p>
+                </li>
+              </ul>
+              <div class="text-center button-bar">
+                <a href="#sec-contact" class="btn btn-success btn-lg" scroll-page>Get Started now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <slider-gallery></slider-gallery>
+  <section id="sec-contact" class="sign-up clearfix">
+    <h1 class="text-center">Sign Up</h1>
+    <div class="note">CREATE YOUR PROFILE IN JUST A FEW STEPS</div>
+    <div class="row text-center tab-set">
+      <ul>
+        <li ng-class="{'active': home.tab === 1}">
+          <a class="btn btn-info btn-fixed" ng-click="home.tab=1">I'm a brand</a>
+        </li>
+        <li ng-class="{'active': home.tab === 2}">
+          <a class="btn btn-success btn-fixed" ng-click="home.tab=2">I'm an influencer</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4 col-md-offset-4" ng-include="'app/components/home/brandForm.html'" ng-show="home.tab===1" >
+    </div>
+    <div class="col-md-4 col-md-offset-4" ng-include="'app/components/home/influencerForm.html'" ng-show="home.tab === 2" >
+    </div>
+  </section>
+</div>
+<!-- Modals -->
+<div ng-include="'app/components/home/caseStudiesModals.html'"></div>
+<div ng-include="'app/components/home/termsModal.html'"></div>

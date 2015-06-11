@@ -1,0 +1,131 @@
+/********PIE CHART STYLES**********/
+$pieMaxHeight = 440px
+
+#followers-platform
+	max-height: $pieMaxHeight
+	
+#chart-container
+	position: relative
+	padding-bottom: 100%
+	height: 0
+	overflow: hidden
+	.donut-container
+		position: absolute
+		top: 0
+		left: 0
+		width: 65%
+		height: 100%
+		max-height: $pieMaxHeight
+		margin-left: 5%
+		.icons-container
+			pointer-events: none
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+			z-index: 5
+			&
+				display: none
+			&.enabled
+				display: block
+			.chart-icon
+				position: absolute
+				font-size: 30px
+				width: 30px
+				color: rgba(255, 255, 255, 0.6)
+			.total-reach-platforms
+				position: absolute
+				top: 50%
+				left: 25%
+				width: 50%
+				margin-top: -8%
+				span
+					font-size: 1.2vw
+					color: #a4a7ae
+				h1
+					margin: 0
+					font-size: 4vw
+					text-align: center
+					@media only screen and (min-width: $screen-lg)
+						font-size: 58px
+		#donutchart
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+	#donut-legend
+		float: right
+		width: 25%
+		&
+			display: none
+		&.enabled
+			display: block
+		.platform-legend
+			display: block
+			margin: 0 0 20px
+			text-align: left
+			.legend-block
+				display: inline-block
+				vertical-align: middle
+				p
+					margin: 0
+					font-size: 14px
+					line-height: 14px
+					margin-bottom: 4px
+			.legend-percent
+				padding: 5px
+				border-radius: 25px
+				font-size: 12px
+				text-align: center
+				height: 50px
+				width: 50px
+				line-height: 28px
+				&.full
+					padding: 12px 5px
+				&.instagram
+					border: 5px solid #3e729a
+				&.vine
+					border: 5px solid #00b487
+				&.twitter
+					border: 5px solid #55acef
+				&.facebook
+					border: 5px solid #3b5999
+				&.pinterest
+					border: 5px solid #cc2127
+				&.youtube
+					border: 5px solid #cf3427
+				&.snapchat
+					border: 5px solid #fffc00
+				&.other
+					border: 5px solid #a3a6af
+			.legend-label
+				margin-left: 10px
+				i
+					font-size 30px
+	
+	@media only screen and (max-width: $screen-sm-max) and (min-width: $screen-xs-max), (max-width: 620px)
+		padding-bottom: calc(100% + 130px)
+		.donut-container
+			margin-top: 130px
+			width: 90%
+			height: calc(100% - 130px)
+		#donut-legend
+			float: none
+			width: 100%
+			padding-top: 0
+			.platform-legend
+				display: inline-block
+				margin: 0 5px 20px
+	
+	@media only screen and (max-width: 620px)
+		#donut-legend
+			.platform-legend
+				.legend-block
+					p
+						font-size: 11px
+				.legend-percent
+					font-size: 14px
+				.legend-label
+					margin-left: 4px

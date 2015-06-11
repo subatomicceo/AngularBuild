@@ -1,0 +1,155 @@
+{
+  "locations": [{
+    "name": "us",
+    "value": 200,
+    "percent": 65
+  }, {
+    "name": "ca",
+    "value": 300,
+    "percent": 15
+  }, {
+    "name": "it",
+    "value": 400,
+    "percent": 10
+  }, {
+    "name": "fr",
+    "value": 500,
+    "percent": 5
+  }, {
+    "name": "de",
+    "value": 600,
+    "percent": 3
+  }, {
+    "name": "ru",
+    "value": 70,
+    "percent": 2
+  }],
+  "gender": {
+    "male": 70,
+    "female": 30
+  },
+  "platforms": [{
+    "id": 1,
+    "name": "Instagram",
+    "color": "FFF",
+    "analytics": {
+      "followers_gained": "150.3k",
+      "posts": "1.4M",
+      "reach": "60k",
+      "percent": "16.6",
+      "engagement": ".6",
+      "locations": {
+        "Germany ": 200,
+        "United States ": 300,
+        "Brazil ": 400,
+        "Canada ": 500,
+        "France ": 600,
+        "RU ": 70
+      }
+    }
+  }, {
+    "id": 2,
+    "name": "Facebook",
+    "color": "FFF",
+    "analytics": {
+      "followers_gained": "150.3k",
+      "posts": "1.4M",
+      "reach": "60k",
+      "percent": "16.6",
+      "engagement": ".6",
+      "locations": {
+        "Germany ": 200,
+        "United States ": 300,
+        "Brazil ": 400,
+        "Canada ": 500,
+        "France ": 600,
+        "RU ": 70
+      }
+    }
+  }, {
+    "id": 3,
+    "name": "Youtube",
+    "color": "FFF",
+    "analytics": {
+      "followers_gained": "150.3k",
+      "posts": "1.4M",
+      "reach": "60k",
+      "percent": "16.6",
+      "engagement": ".6",
+      "locations": {
+        "Germany ": 200,
+        "United States ": 300,
+        "Brazil ": 400,
+        "Canada ": 500,
+        "France ": 600,
+        "RU ": 70
+      }
+    }
+  }, {
+    "id": 4,
+    "name": "Twitter",
+    "color": "FFF",
+    "analytics": {
+      "followers_gained": "150.3k",
+      "posts": "1.4M",
+      "reach": "60k",
+      "percent": "16.6",
+      "engagement": ".6",
+      "locations": {
+        "Germany ": 200,
+        "United States ": 300,
+        "Brazil ": 400,
+        "Canada ": 500,
+        "France ": 600,
+        "RU ": 70
+      }
+    }
+  }, {
+    "id": 5,
+    "name": "Vine",
+    "color": "FFF",
+    "analytics": {
+      "followers_gained": "150.3k",
+      "posts": "1.4M",
+      "reach": "60k",
+      "percent": "16.6",
+      "engagement": ".6",
+      "locations": {
+        "Germany ": 200,
+        "United States ": 300,
+        "Brazil ": 400,
+        "Canada ": 500,
+        "France ": 600,
+        "RU ": 70
+      }
+    }
+  }, {
+    "id": 6,
+    "name": "Snapchat",
+    "color": "yellow",
+    "analytics": {
+      "followers_gained": "150.3k",
+      "posts": "1.4M",
+      "reach": "60k",
+      "percent": "16.6",
+      "engagement": ".6",
+      "locations": {
+        "Germany ": 200,
+        "United States ": 300,
+        "Brazil ": 400,
+        "Canada ": 500,
+        "France ": 600,
+        "RU ": 70
+      }
+    }
+  }],
+  "engagements": {
+    "averageEngRate": "2.40",
+    "totalEngLastWeek": "1,186,363",
+    "averageLikesPerPost": "7,815",
+    "averageCommentsPerPost": "59",
+    "totalLikes": "1176538",
+    "totalComments": "9825"
+  }
+
+}

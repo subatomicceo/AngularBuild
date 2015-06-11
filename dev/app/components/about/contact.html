@@ -1,0 +1,117 @@
+<div class="container contact">
+  <h1 class="text-center">What can we help you with?</h1>
+  <div class="col-md-4 col-md-offset-4">
+    <div class="form-group">
+      <select class="form-control" ng-model="about.inquiry">
+        <option value="1">General Inqiries</option>
+        <option value="2">Brand Inquiry</option>
+        <option value="3">Become an Influencer</option>
+      </select>
+    </div>
+    <!-- General form -->
+    <form name="brandForm" novalidate ng-show="about.inquiry === '1'">
+      <div class="row">
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" required ng-maxlength="20" name="firstName" ng-model="about.contacts.general.firstName" />
+          <label>first name<span class="required">*</span></label>
+        </div>
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" required ng-maxlength="20" name="lastName" ng-model="about.contacts.general.lastName" />
+          <label>last name<span class="required">*</span></label>
+        </div>
+        <div class="form-group col-md-12">
+          <input type="email" class="form-control" required name="email" ng-model="about.contacts.general.email" />
+          <label>email<span class="required">*</span></label>
+        </div>
+        <div class="form-group col-md-12">
+          <input type="text" class="form-control" name="phone" ng-model="about.contacts.general.phone" />
+          <label>phone</label>
+        </div>
+        <div class="form-group col-md-12">
+          <input type="email" class="form-control" name="company" ng-model="about.contacts.general.company" />
+          <label>company</label>
+        </div>
+        <div class="form-group col-md-12">
+          <textarea cols="30" rows="10" class="form-control" name="message" ng-model="about.contacts.general.message">
+          </textarea>
+          <label>
+            Message
+          </label>
+        </div>
+        <div class="col-md-12 text-center">
+          <input class="btn btn-primary btn-lg" type="submit" value="Submit now">
+        </div>
+      </div>
+    </form>
+    <!-- end of General form  -->
+    <!-- Brand form -->
+    <form name="brandForm" novalidate ng-show="about.inquiry === '2'">
+      <div class="row">
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" required ng-maxlength="20" name="firstName" ng-model="about.contacts.brand.firstName" />
+          <label>first name<span class="required">*</span></label>
+        </div>
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" required ng-maxlength="20" name="lastName" ng-model="about.contacts.brand.lastName" />
+          <label>last name<span class="required">*</span></label>
+        </div>
+        <div class="form-group col-md-12">
+          <input type="email" class="form-control" required name="email" ng-model="about.contacts.brand.email" />
+          <label>email<span class="required">*</span></label>
+        </div>
+        <div class="form-group col-md-12">
+          <input type="text" class="form-control" required name="phone" ng-model="about.contacts.brand.phone" />
+          <label>phone<span class="required">*</span></label>
+        </div>
+        <div class="form-group col-md-12">
+          <input type="email" class="form-control" required name="company" ng-model="about.contacts.brand.company" />
+          <label>company<span class="required">*</span></label>
+        </div>
+        <div class="form-group col-md-12">
+          <input type="link" class="form-control" required name="website" ng-model="about.contacts.brand.website" />
+          <label>website<span class="required">*</span></label>
+        </div>
+        <div class="form-group col-md-12">
+          <textarea cols="30" rows="10" class="form-control" name="message" ng-model="about.contacts.brand.message">
+          </textarea>
+          <label>
+            PLEASE GIVE A DESCRIPTION OF YOUR COMPANY AND WHAT YOU ARE LOOKING TO ACHIEVE FROM YOUR CAMPAIGN WITH INSTABRAND:
+          </label>
+        </div>
+        <div class="col-md-12 text-center">
+          <input class="btn btn-primary btn-lg" type="submit" value="Submit now">
+        </div>
+      </div>
+    </form>
+    <!-- end of Brand form -->
+    <!-- influencers form -->
+    <form name="brandForm" novalidate ng-show="about.inquiry === '3'" class="form-success">
+      <div class="row">
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" required ng-maxlength="20" name="firstName" ng-model="about.contacts.influencer.firstName" />
+          <label>first name<span class="required">*</span></label>
+        </div>
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" required ng-maxlength="20" name="lastName" ng-model="about.contacts.influencer.lastName" />
+          <label>last name<span class="required">*</span></label>
+        </div>
+        <div class="form-group col-md-12">
+          <input type="email" class="form-control" required name="email" ng-model="about.contacts.influencer.email" />
+          <label>email<span class="required">*</span></label>
+        </div>
+        <div class="form-group col-md-12">
+          <input type="text" class="form-control" required name="phone" ng-model="about.contacts.influencer.phone" />
+          <label>phone<span class="required">*</span></label>
+        </div>
+        <div class="form-group col-md-12 text-right terms">
+          <a>i accept terms of service</a>
+          <input type="checkbox" name="terms" ng-model="home.influencer.terms" required>
+        </div>
+        <div class="col-md-12 text-center">
+          <input class="btn btn-success btn-lg" type="submit" value="Continue">
+        </div>
+      </div>
+    </form>
+    <!-- end of Influencers form -->
+  </div>
+</div>

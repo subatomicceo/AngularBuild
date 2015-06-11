@@ -1,0 +1,61 @@
+{
+    "dashboard": {
+        "user": {
+            "id": 1234,
+            "name": "Nike",
+            "image": "/images/usr/nike.jpg"
+        },
+        "campaigns": [
+            {
+                "id": 123,
+                "name": "Just Do It"
+            },
+            {
+                "id": 456,
+                "name": "Kobe Did"
+            },
+            {
+                "id": 789,
+                "name": "Get It?"
+            }
+        ],
+        "requests" : [
+            {
+                "id": 123,
+                "influencer": "full name",
+                "img": "https://instagramimages-a.akamaihd.net/profiles/profile_28724053_75sq_1381620784.jpg",
+                "product": "Red/White Shoes",
+                "platform": "instagram",
+                "qty": "1",
+                "status": "Pending"
+            },
+            {
+                "id": 123,
+                "influencer": "oohjules",
+                "img": "https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/10683961_713562098718287_531276228_a.jpg",
+                "product": "Red/White Shoes",
+                "platform": "facebook",
+                "qty": "1",
+                "status": "Approved"
+            },
+            {
+                "id": 123,
+                "influencer": "shopsweetthings",
+                "img": "https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/11093091_1023430117671640_1382541961_a.jpg",
+                "product": "Red/White Shoes",
+                "platform": "youtube",
+                "qty": "1",
+                "status": "Declined"
+            },
+            {
+                "id": 123,
+                "influencer": "vicmonfort",
+                "img": "https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/11190829_1651191645100667_169995820_a.jpg",
+                "product": "Red/White Shoes",
+                "platform": "snapchat",
+                "qty": "1",
+                "status": "Scheduled"
+            }
+        ]
+    }
+}

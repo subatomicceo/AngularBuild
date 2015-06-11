@@ -1,0 +1,38 @@
+<form name="brandForm" novalidate>
+  <div class="row">
+    <div class="form-group col-md-6">
+      <input type="text" class="form-control" required ng-maxlength="20" name="firstName" ng-model="home.brand.firstName" />
+      <label>first name<span class="required">*</span></label>
+    </div>
+    <div class="form-group col-md-6">
+      <input type="text" class="form-control" required ng-maxlength="20" name="lastName" ng-model="home.brand.lastName" />
+      <label>last name<span class="required">*</span></label>
+    </div>
+    <div class="form-group col-md-12">
+      <input type="email" class="form-control" required name="email" ng-model="home.brand.email" />
+      <label>email<span class="required">*</span></label>
+    </div>
+    <div class="form-group col-md-12">
+      <input type="text" class="form-control" required name="phone" ng-model="home.brand.phone" />
+      <label>phone<span class="required">*</span></label>
+    </div>
+    <div class="form-group col-md-12">
+      <input type="email" class="form-control" required name="company" ng-model="home.brand.company" />
+      <label>company<span class="required">*</span></label>
+    </div>
+    <div class="form-group col-md-12">
+      <input type="link" class="form-control" required name="website" ng-model="home.brand.website" />
+      <label>website<span class="required">*</span></label>
+    </div>
+    <div class="form-group col-md-12">
+      <textarea cols="30" rows="10" class="form-control" name="message" ng-model="home.brand.message">
+      </textarea>
+      <label>
+        PLEASE GIVE A DESCRIPTION OF YOUR COMPANY AND WHAT YOU ARE LOOKING TO ACHIEVE FROM YOUR CAMPAIGN WITH INSTABRAND:
+      </label>
+    </div>
+    <div class="col-md-12 text-center">
+      <input class="btn btn-primary" type="submit" value="Submit now">
+    </div>
+  </div>
+</form>

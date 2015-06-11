@@ -1,0 +1,150 @@
+body
+  .top-buffer
+    margin-top 20px
+
+  // BUTTONS
+  .btn
+    padding 6px 12px 
+    font-size 16px
+    line-height 18px
+    border-radius 2px
+    text-transform uppercase
+    display inline-block
+    line-height 18px
+    letter-spacing 1px
+    text-decoration none
+    vertical-align top
+    &.btn-fixed
+      padding 11px
+      font-weight bold
+      font-style italic
+      display inline-block
+      width 200px
+      color #a3a6ae
+      background-color transparent
+      border-color #cfd1d5
+      &:hover
+        &.btn-info
+          color #4b82c7
+          border-color #4b82c7;
+        &.btn-success
+          color #6dcf86
+          border-color #6dcf86
+  .active >
+    .btn.btn-fixed
+        &.btn-info
+          color #4b82c7
+          border-color #4b82c7;
+        &.btn-success
+          color #6dcf86
+          border-color #6dcf86;
+  .btn-primary:hover
+  	background #000
+  .btn-lg
+    border-radius 4px
+    padding 11px 30px 10px
+  .nopadding
+    margin: 0!important
+    padding: 0!important
+  
+  // FORMS
+  form
+    
+    .form-group
+      position relative
+      &:before
+        content " "
+        display table
+      label
+        position absolute
+        top 0
+        display block
+        color #a3a6ae
+        font-size 11px
+        line-height 13px
+        margin 0 0 -4px
+        text-transform uppercase
+        letter-spacing 1px
+        font-weight normal
+        cursor text
+        z-index 1
+      .form-control
+        margin-top 5px
+        display block
+        width 100%
+        background none
+        border 0
+        border-radius 0
+        box-shadow none
+        border-bottom 1px solid #cfd1d5
+        text-transform uppercase
+        color #a3a6ae
+        font-size 11px
+        line-height 13px
+        padding 0
+        height 15px
+        letter-spacing 1px
+        box-shadow none
+        -webkit-transition height 0.2s
+        transition height 0.2
+        margin-bottom 5px;
+        z-index 2
+        &:focus
+          height 36px
+          color #464d5c
+          font-size 20px
+          line-height 23px
+          text-transform none
+          + label
+            color #4b82c7
+      textarea.form-control
+        padding-top 60px
+        resize none
+        overflow auto
+        &:focus
+          height auto
+    &.form-success
+      .form-group
+        color #000;
+        .form-control:focus + label
+          color #6dcf86
+  .progress.gender
+    height 50px
+    border-radius 0px
+    margin-bottom 10%
+    overflow visible
+    .progress-bar
+      text-align center
+      &.male
+        background #86cee5
+      &.female
+        background #e077b8
+      .percent
+        color #fff
+        line-height 50px
+        font-size 28px
+        font-weight bold
+      .title
+        padding 5px
+        font-size 16px
+        color #464d5c
+  .text-muted
+    color #a3a6ae
+    
+//Modals
+.modal 
+  .modal-title
+    text-align center
+  .modal-content
+    padding 40px
+    border-radius 2px
+    button.close
+      position absolute
+      top 15px
+      right 13px
+      text-indent -9999px
+      overflow hidden
+      width 26px
+      height 26px
+      opacity 1
+      background url(../img/sprite2.png) no-repeat -37px -65px

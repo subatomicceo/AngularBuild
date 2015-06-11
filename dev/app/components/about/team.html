@@ -1,0 +1,16 @@
+<div class="container team">
+  <div class="text-box text-center">
+    <h1>Meet The Team</h1>
+    <p>The looks and the brains behind it all, meet #teaminstabrand.</p>
+  </div>
+  <div class="row">
+    <ul class="team-list">
+      <li ng-repeat="member in about.team">
+        <a>
+          <img ng-src="{{member.image}}">
+          <strong class="name">{{member.name}}</strong> {{member.dessignation}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

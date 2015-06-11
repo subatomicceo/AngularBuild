@@ -1,0 +1,27 @@
+<form name="influencerForm" class="form-success" novalidate>
+  <div class="row">
+    <div class="form-group col-md-6">
+      <input type="text" class="form-control" required ng-maxlength="20" name="firstName" ng-model="home.influencer.firstName" />
+      <label>first name<span class="required">*</span></label>
+    </div>
+    <div class="form-group col-md-6">
+      <input type="text" class="form-control" required ng-maxlength="20" name="lastName" ng-model="home.influencer.lastName" />
+      <label>last name<span class="required">*</span></label>
+    </div>
+    <div class="form-group col-md-12">
+      <input type="email" class="form-control" required name="email" ng-model="home.influencer.email" />
+      <label>email<span class="required">*</span></label>
+    </div>
+    <div class="form-group col-md-12">
+      <input type="text" class="form-control" required name="phone" ng-model="home.influencer.phone" />
+      <label>phone<span class="required">*</span></label>
+    </div>
+    <div class="form-group col-md-12 text-right terms">
+      <a data-toggle="modal" data-target="#termsModal" href="">i accept terms of service</a>
+      <input type="checkbox" name="terms" ng-model="home.influencer.terms" required>
+    </div>
+    <div class="col-md-12 text-center">
+      <input class="btn btn-success" type="submit" value="Continue">
+    </div>
+  </div>
+</form>

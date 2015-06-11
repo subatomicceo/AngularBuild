@@ -1,0 +1,35 @@
+<div class="col-md-10">
+  <div class="row">
+    <!-- campaigns dropdown START -->
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="campaignsDropdown" data-toggle="dropdown" aria-expanded="true">
+      Select Campaign<span class="icon-expand-more"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="campaignsDropdown">
+        <li role="presentation" ng-repeat="campaign in dashboard.campaigns">
+          <a role="menuitem" tabindex="-1" href="#" id="{{campaign.id}}">{{campaign.name}}</a>
+        </li>
+      </ul>
+    </div>
+    <!-- campaigns dropdown END -->
+    <!-- download as pdf btn  START -->
+    <div class="pdf-btn">
+      <button type="button" class="btn btn-default" aria-label="Left Align">
+      Download PDF <span class="icon-pdf" aria-hidden="true"></span>
+      </button>
+    </div>
+    <!-- download as pdf btn END -->
+  </div>
+
+  <!-- locations chart START -->
+  <div class="row top-buffer">
+    <platforms-chart dashboard="dashboard"></platforms-chart>
+  </div>
+  <!-- locations chart END -->
+  
+  <!-- locations chart START -->
+  <div class="row top-buffer">
+    <followers-chart dashboard="dashboard"></followers-chart>
+  </div>
+  <!-- locations chart END -->
+</div>

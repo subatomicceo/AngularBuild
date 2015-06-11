@@ -1,0 +1,25 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<div class="row">
+			<div class="col-md-3">Influencer</div>
+			<div class="col-md-3">Product</div>
+			<div class="col-md-2">Platform</div>
+			<div class="col-md-2">Qty</div>
+			<div class="col-md-2">Status</div>
+		</div>
+	</div>
+	<div class="panel-body" >
+		<div class="row column" ng-repeat="request in dashboard.requests">
+			<div class="col-md-3">
+				<img class="inf-img" src="{{request.img}}" alt="">
+				<span>{{request.influencer}}</span>
+			</div>
+			<div class="col-md-3">{{request.product}}</div>
+			<div class="col-md-2">
+				<i class="platform icon-{{request.platform}}"></i>
+			</div>
+			<div class="col-md-2">{{request.qty}}</div>
+			<div class="col-md-2">{{request.status}}</div>
+		</div>
+	</div>
+</div>

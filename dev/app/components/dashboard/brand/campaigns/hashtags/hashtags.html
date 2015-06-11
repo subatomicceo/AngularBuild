@@ -1,0 +1,154 @@
+<div class="col-md-10" id="hashtags">
+  <div class="clearfix">
+    <!-- campaigns dropdown START -->
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="campaignsDropdown" data-toggle="dropdown" aria-expanded="true">
+        Select Campaign
+        <span class="fa fa-chevron-down"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="campaignsDropdown">
+        <li role="presentation" ng-repeat="campaign in campaigns">
+          <a role="menuitem" tabindex="-1" href="#" id="{{campaign.id}}">{{campaign.name}}</a>
+        </li>
+      </ul>
+    </div>
+    <!-- campaigns dropdown END -->
+    <!-- download as pdf btn  START -->
+    <div class="pdf-btn">
+      <button type="button" class="btn btn-default" aria-label="Left Align">
+        Download PDF <span class="fa fa-file-pdf-o" aria-hidden="true"></span>
+      </button>
+    </div>
+    <!-- download as pdf btn END -->
+  </div>
+  <!-- overview START -->
+  <div class="clearfix top-buffer">
+    <div class="panel panel-default overview">
+      <div class="panel-heading text-center"><b>Overview:</b> #brandhashtag</div>
+      <div class="panel-body text-center">
+        <div class="col-md-4 stat-block">
+          <i class="icon-edit"></i>
+          <h3>{{campaignsHashtags.data.overview.totalPosts}}</h3>
+          <h5>Total Posts</h5>
+        </div>
+        <div class="col-md-4 stat-block">
+          <i class="icon-user"></i>
+          <h3>{{campaignsHashtags.data.overview.contributors}}</h3>
+          <h5>Unique Contributors</h5>
+        </div>
+        <div class="col-md-4 stat-block">
+          <i class="icon-globe"></i>
+          <h3>{{campaignsHashtags.data.overview.totalReach}}</h3>
+          <h5>Total Reach</h5>
+        </div>
+        <div class="col-md-4 stat-block">
+          <i class="icon-heart"></i>
+          <h3>{{campaignsHashtags.data.overview.totalLikes}}</h3>
+          <h5>Total Likes</h5>
+        </div>
+        <div class="col-md-4 stat-block">
+          <i class="icon-comment"></i>
+          <h3>{{campaignsHashtags.data.overview.totalComments}}</h3>
+          <h5>Total Comments</h5>
+        </div>
+        <div class="col-md-4 stat-block">
+          <i class="icon-share"></i>
+          <h3>{{campaignsHashtags.data.overview.totalShares}}</h3>
+          <h5>Total Shares</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- overview END -->
+  <!-- trends chart START -->
+  <div class="clearfix top-buffer">
+    <div class="panel panel-default">
+      <div class="panel-heading text-center"><b>Trends:</b> #hashtag</div>
+      <div class="panel-body">
+        <div class="row chart">
+        </div>
+        <div class="row chart-panel">
+        </div>
+      </div>
+      <div class="panel-footer text-center clearfix">
+        <div class="col-md-3">
+          <h3>{{campaignsHashtags.data.trends.reachPerPost}}</h3>
+          <span>Average reach/post</span>
+        </div>
+        <div class="col-md-3">
+          <h3>{{campaignsHashtags.data.trends.engagementPerPost}}</h3>
+          <span>Average engagement/post</span>
+        </div>
+        <div class="col-md-3">
+          <h3>{{campaignsHashtags.data.trends.reachPerDay}}</h3>
+          <span>Average reach/day</span>
+        </div>
+        <div class="col-md-3">
+          <h3>{{campaignsHashtags.data.trends.engagementPerDay}}</h3>
+          <span>Average engagement/day</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- trends chart END -->
+  <!-- top posts chart START -->
+  <h4>Top Posts</h4>
+  <div class="clearfix top-buffer">
+    <div class="panel panel-default separated">
+      <div class="panel-heading text-center clearfix">
+        <div class="col-md-6">
+          <b>Reach</b>
+        </div>
+        <div class="col-md-6">
+          <b>Likes</b>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="col-md-6">
+          <campaign-post ng-repeat="post in campaignsHashtags.data.posts.reach"></campaign-post>
+        </div>
+        <div class="col-md-6">
+          <campaign-post ng-repeat="post in campaignsHashtags.data.posts.likes"></campaign-post>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- top posts chart END -->
+  <!-- location chart START -->
+  <div class="clearfix top-buffer">
+    <div class="panel panel-default">
+      <div class="panel-heading text-center"><b>Audience Locations</b></div>
+      <div class="panel-body">
+        <div class="col-md-8">
+          <div google-chart chart="chart" style="{{cssStyle}}" on-ready="chartReady()"></div>
+        </div>
+        <div class="col-md-4">
+          <div class="row" ng-repeat="location in campaignsHashtags.data.locations">
+            <div class="col-md-6">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:{{location.percent}}%;"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <span class="flag-icon flag-icon-{{location.name}}"></span>{{location.value}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- location gain chart END -->
+  <!-- audience gender START -->
+  <h4 class="text-center">Audience Gender</h4>
+  <div class="clearfix   progress gender">
+    <div class="progress-bar male" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:{{campaignsHashtags.data.gender.male}}%;">
+      <span class="percent">{{campaignsHashtags.data.gender.male}}%</span>
+      <p class="title">Male</p>
+    </div>
+    <div class="progress-bar female" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:{{campaignsHashtags.data.gender.female}}%;">
+      <span class="percent">{{campaignsHashtags.data.gender.female}}%</span>
+      <p class="title">Female</p>
+    </div>
+  </div>
+  <!-- audience gender END -->
+</div>
